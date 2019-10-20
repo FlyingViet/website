@@ -12,16 +12,16 @@ const Header = (props) => (
         <div className="content">
             <div className="inner">
                 <h1>Brian Hoang</h1>
-                <p>Full Stack Software Developer</p>
+                <p>Full Stack Software Engineer</p>
             </div>
         </div>
         <nav>
             <ul>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About Me</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('career')}}>Career</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('discord')}}>Discord Bot</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('media')}}>Media</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Connect</a></li>
             </ul>
         </nav>
     </header>

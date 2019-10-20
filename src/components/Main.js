@@ -28,37 +28,40 @@ class Main extends React.Component {
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}>
-          <h2 className="major">About Me</h2>
+          <center><h2 className="major">About Me</h2></center>
           <span className="image main">
             <img src={pic01} alt="" id="profile" />
           </span>
           <p>
-            My name is Brian Hoang and I am a Software Engineer.
+            Hello, I am Brian Hoang.
           </p>
           <p>
-            I am currently attending University of Wisconsin - Milwaukee and studying Computer Science. I like to travel the world and take pictures.
-            In my free time I like to program, eat, do some boxing, and sleep.
+            I am a Computer Science major at University of Wisconsin - Milwaukee. <br/>Currently working at Quad doing full stack development.<br/>
+            I am a quick learner with a passion for programming.<br/>
+            Loves to travel, eat, take pictures, and hang out with friends and family.
           </p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="career"
+          className={`${this.props.article === 'career' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}>
-          <h2 className="major">Work Experience</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
+          <center><h2 className="major">Career</h2></center>
           <p>
-            <h2>Quad</h2>
-            <p>Software Developer Intern | June 2019 - Current<br/>C# | ASP.Net | TypeScript | React | T-SQL</p>
+            <h3>Quad</h3>
+            <p>Software Developer Intern | June 2019 - Current<br/>C# ∙ ASP.Net ∙ TypeScript ∙ React ∙ T-SQL</p>
           </p>
           <p>
-            <h2>vcpi</h2>
+            <h3>vcpi</h3>
             <p>Customer Support Representative | March 2018 - April 2019</p>
+          </p>
+          <center><h2 className="major">Education</h2></center>
+          <p>
+            <h3>University of Wisconsin - Milwaukee</h3>
+            <p>Bachelor of Computer Science</p>
           </p>
           {close}
         </article>
@@ -69,8 +72,8 @@ class Main extends React.Component {
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}>
-          <h2 className="major">Instagram</h2>
-          <div className="center">
+          <center><h2 className="major">Instagram</h2></center>
+          <center>
             <ul>
               <StaticQuery
                 query={graphql`
@@ -90,13 +93,12 @@ class Main extends React.Component {
               `}
               render={data => (
                 data.allInstaNode.edges.map(edge => {
-                  console.log(edge)
-                  return <img src={edge.node.original} alt="" width="300px" height="300px" ></img>
+                  return <img src={edge.node.original} alt="" width="200px" height="200px"/>
                 })
               )}
               />
             </ul>
-          </div>
+          </center>
           {close}
         </article>
         <article
@@ -105,7 +107,7 @@ class Main extends React.Component {
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}>
-          <h2 className="major">Discord Bot</h2>
+          <center><h2 className="major">Discord Bot</h2></center>
           <p>
             <h2>List of General Commands</h2>
             <ul>
@@ -139,29 +141,8 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="mailto:brihoang1995@gmail.com">
-            <div className="field half first">
-              <label htmlFor="name">Name:<br/></label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email:<br/></label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message:<br/></label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
+          <center><h2 className="major">Connect with me</h2></center>
+
           <ul className="icons">
             <li>
               <a href="https://www.instagram.com/itzhoang/" className="icon fa-instagram">
