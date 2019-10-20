@@ -103,11 +103,13 @@ class IndexPage extends React.Component {
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             />
+            <iframe src="https://www.linkedin.com/in/brianthoang/" height="1px" width="1px"></iframe>
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
         </div>
       </Layout>
+
     )
   }
 }
