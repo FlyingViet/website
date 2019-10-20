@@ -19,7 +19,7 @@ const Footer = (props) => (
               </a>
             </li>
             <li>
-              <a href="../images/Resume.pdf" download className="icon fa-file"> 
+              <a href="../Files/AnonResume.pdf" download className="icon fa-file"> 
                 <span className="label">Resume</span>
               </a>
             </li>
