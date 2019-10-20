@@ -49,7 +49,10 @@
 			&.active {
 				display: block !important;
 			}
-
+			.center{
+				margin-left: auto;
+				margin-right: auto;
+			}
 			.close {
 				display: block;
 				position: absolute;

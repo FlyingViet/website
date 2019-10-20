@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/headshot.png'
 import pic02 from '../images/background.jpg'
+import {StaticQuery, graphql} from 'gatsby'
 
 class Main extends React.Component {
 
@@ -69,10 +70,33 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}>
           <h2 className="major">Instagram</h2>
-          <ul>
-
-          </ul>
-
+          <div className="center">
+            <ul>
+              <StaticQuery
+                query={graphql`
+                {
+                  allInstaNode {
+                    edges {
+                      node {
+                        original
+                        dimensions {
+                          height
+                          width
+                        }
+                      }
+                    }
+                  }
+                }              
+              `}
+              render={data => (
+                data.allInstaNode.edges.map(edge => {
+                  console.log(edge)
+                  return <img src={edge.node.original} alt="" width="300px" height="300px" ></img>
+                })
+              )}
+              />
+            </ul>
+          </div>
           {close}
         </article>
         <article
