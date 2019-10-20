@@ -126,36 +126,8 @@ class Main extends React.Component {
               <li>!rankoce</li>
             </ul>
             
-            <button><a href="https://discordapp.com/oauth2/authorize?client_id=599401316107943946&permissions=2146958839&scope=bot">Add to server</a></button>
+            <button><a href="https://discordapp.com/oauth2/authorize?client_id=599401316107943946&permissions=2146958839&scope=bot" >Add to server</a></button>
           </p>
-          {close}
-        </article>
-
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <center><h2 className="major">Connect with me</h2></center>
-
-          <ul className="icons">
-            <li>
-              <a href="https://www.instagram.com/itzhoang/" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/brianthoang/" className="icon fa-linkedin">
-                <span className="label">LinkedIn</span></a>
-            </li>
-            <li>
-              <a href="https://github.com/FlyingViet/" className="icon fa-github">
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
           {close}
         </article>
       </div>

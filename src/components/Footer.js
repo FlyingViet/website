@@ -18,6 +18,11 @@ const Footer = (props) => (
                 <span className="label">GitHub</span>
               </a>
             </li>
+            <li>
+              <a href="../images/Resume.pdf" download className="icon fa-file"> 
+                <span className="label">Resume</span>
+              </a>
+            </li>
           </ul></center>
         <p className="copyright">&copy; Brian Hoang. Design: <a href="https://html5up.net">HTML5 UP</a>. Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a></p>
     </footer>
