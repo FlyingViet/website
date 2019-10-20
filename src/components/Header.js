@@ -5,9 +5,7 @@ import pic from '../images/headshot.png'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="logo">
-            <img src={pic} alt="" className="logo"></img>
-        </div>
+    <img src={pic} alt="" className="logo"></img>
      
         <div className="content">
             <div className="inner">

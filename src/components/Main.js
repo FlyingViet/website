@@ -71,7 +71,7 @@ class Main extends React.Component {
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}>
-          <center><h2 className="major">Instagram</h2></center>
+          <center><h2 className="major">Pictures</h2></center>
           <center>
             <ul>
               <StaticQuery
