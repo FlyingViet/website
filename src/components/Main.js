@@ -14,7 +14,8 @@ class Main extends React.Component {
         }}
       ></div>
     )
-
+    let commandArr = ["!clear", "!help", "!invite", "!maplestory", "!pin", "!pinthis", "!prefix", "!roll"];
+    let leagueArr = ["!rankeune", "!rankeuw", "!rankkr", "!rankna", "!rankoce"]
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -27,11 +28,11 @@ class Main extends React.Component {
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}>
-          <center><h2 className="major">About Me</h2></center>
-          <center><img src={pic01} alt="" id="profile" /></center>
-          <p>
-            Hello, I am Brian Hoang.
-          </p>
+          <center>
+            <h2 className="major">About Me</h2>
+            <img src={pic01} alt="" id="profile" />
+            <p>Hello, I am Brian Hoang.</p>
+          </center>        
           <p>
             I am a Computer Science major at University of Wisconsin - Milwaukee. <br/>Currently working at Quad doing full stack development.<br/>
             I am a quick learner with a passion for programming.<br/>
@@ -69,8 +70,8 @@ class Main extends React.Component {
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}>
-          <center><h2 className="major">Pictures</h2></center>
           <center>
+          <h2 className="major">Pictures</h2>
             <ul>
               <StaticQuery
                 query={graphql`
@@ -108,22 +109,15 @@ class Main extends React.Component {
           <p>
             <h2>List of General Commands</h2>
             <ul>
-              <li>!clear</li>
-              <li>!help</li>
-              <li>!invite</li>
-              <li>!maplestory</li>
-              <li>!pin</li>
-              <li>!pinthis</li>
-              <li>!prefix</li>
-              <li>!roll</li>
+              {commandArr.map(item => {
+                return <li>{item}</li>
+              })}
             </ul>
             <h2>League of Legends commands</h2>
             <ul>
-              <li>!rankna</li>
-              <li>!rankeuw</li>
-              <li>!rankkr</li>
-              <li>!rankna</li>
-              <li>!rankoce</li>
+              {leagueArr.map(item =>{
+                return <li>{item}</li>
+              })}
             </ul>
             
             <center>
