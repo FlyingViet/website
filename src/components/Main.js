@@ -126,7 +126,9 @@ class Main extends React.Component {
               <li>!rankoce</li>
             </ul>
             
-            <button><a href="https://discordapp.com/oauth2/authorize?client_id=599401316107943946&permissions=2146958839&scope=bot" >Add to server</a></button>
+            <center>
+              <button><a href="https://discordapp.com/oauth2/authorize?client_id=599401316107943946&permissions=2146958839&scope=bot" >Add to server</a></button>
+            </center>
           </p>
           {close}
         </article>
