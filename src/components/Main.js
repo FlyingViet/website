@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/headshot.png'
-import pic02 from '../images/background.jpg'
 import {StaticQuery, graphql} from 'gatsby'
 
 class Main extends React.Component {
