@@ -16,13 +16,14 @@ const Header = (props) => (
             </div>
         </div>
         <nav>
+            <center>
             <ul>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About Me</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('career')}}>Career</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('discord')}}>Discord Bot</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('media')}}>Media</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Connect</a></li>
             </ul>
+            </center>
         </nav>
     </header>
 )

@@ -104,14 +104,14 @@
 				li {
 					padding-left: 0;
 					border-left: solid _size(border-width) _palette(border);
-
+					width: 100%;
 					&:first-child {
 						border-left: 0;
 					}
 
 					a {
 						display: block;
-						min-width: 7.5rem;
+						min-width: 10rem;
 						height: 2.75rem;
 						line-height: 2.75rem;
 						padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
