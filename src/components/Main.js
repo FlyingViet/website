@@ -28,9 +28,7 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}>
           <center><h2 className="major">About Me</h2></center>
-          <span className="image main">
-            <img src={pic01} alt="" id="profile" />
-          </span>
+          <center><img src={pic01} alt="" id="profile" /></center>
           <p>
             Hello, I am Brian Hoang.
           </p>
