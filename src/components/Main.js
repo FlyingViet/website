@@ -72,8 +72,8 @@ class Main extends React.Component {
           style={{ display: 'none' }}>
           <center>
           <h2 className="major">Pictures</h2>
-            <ul>
-              <StaticQuery
+            
+          <StaticQuery
                 query={graphql`
                 {
                   allInstaNode {
@@ -95,7 +95,7 @@ class Main extends React.Component {
                 })
               )}
               />
-            </ul>
+           
           </center>
           {close}
         </article>
