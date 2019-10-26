@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/headshot.png'
-import {StaticQuery, graphql} from 'gatsby'
+import InstaFeed from './InstaFeed'
+
 
 class Main extends React.Component {
 
@@ -70,33 +71,7 @@ class Main extends React.Component {
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}>
-          <center>
-          <h2 className="major">Pictures</h2>
-            
-          <StaticQuery
-                query={graphql`
-                {
-                  allInstaNode {
-                    edges {
-                      node {
-                        original
-                        dimensions {
-                          height
-                          width
-                        }
-                      }
-                    }
-                  }
-                }              
-              `}
-              render={data => (
-                data.allInstaNode.edges.map(edge => {
-                  return <img src={edge.node.original} alt="" width="200px" height="200px"/>
-                })
-              )}
-              />
-           
-          </center>
+          <InstaFeed/>
           {close}
         </article>
         <article
@@ -119,7 +94,6 @@ class Main extends React.Component {
                 return <li>{item}</li>
               })}
             </ul>
-            
             <center>
               <button><a href="https://discordapp.com/oauth2/authorize?client_id=599401316107943946&permissions=2146958839&scope=bot" >Add to server</a></button>
             </center>
