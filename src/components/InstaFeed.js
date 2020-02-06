@@ -4,7 +4,7 @@ import {StaticQuery, graphql} from 'gatsby'
 export default function InstaFeed(){
     return (
         <center>
-          <h2 className="major">Pictures</h2>   
+          <h2 className="major">My Foodie Adventures</h2>   
           <StaticQuery
                 query={graphql`
                 {
