@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/headshot.png'
 import InstaFeed from './InstaFeed'
-
+import live from '../images/live.png'
 
 class Main extends React.Component {
 
@@ -15,8 +15,6 @@ class Main extends React.Component {
         }}
       ></div>
     )
-    let commandArr = ["!clear", "!help", "!invite", "!maplestory", "!pin", "!pinthis", "!prefix", "!roll"];
-    let leagueArr = ["!rankeune", "!rankeuw", "!rankkr", "!rankna", "!rankoce"]
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -35,9 +33,12 @@ class Main extends React.Component {
             <p>Hello, I am Brian Hoang.</p>
           </center>        
           <p>
-            I am a Computer Science major at University of Wisconsin - Milwaukee. <br/>Currently working at Quad doing full stack development.<br/>
+            I am a Computer Science major at University of Wisconsin - Milwaukee. <br/>
+            I will be an incoming Software Development Engineer Intern at Amazon for Summer 2020. <br/>
+            Currently working at Quad doing full stack development.<br/>
             I am a quick learner with a passion for programming.<br/>
-            Loves to travel, eat, take pictures, and hang out with friends and family.
+            Loves to travel, eat, take pictures, and hang out with friends and family.<br/>
+            If you want to connect, feel free to add me on <a href="https://www.linkedin.com/in/brianthoang/" target="_blank">LinkedIn</a>
           </p>
           {close}
         </article>
@@ -82,20 +83,12 @@ class Main extends React.Component {
           style={{ display: 'none' }}>
           <center><h2 className="major">Discord Bot</h2></center>
           <p>
-            <h2>List of General Commands</h2>
-            <ul>
-              {commandArr.map(item => {
-                return <li>{item}</li>
-              })}
-            </ul>
-            <h2>League of Legends commands</h2>
-            <ul>
-              {leagueArr.map(item =>{
-                return <li>{item}</li>
-              })}
-            </ul>
+          <center><img src={live} alt="" id="live-commands" /></center>
+            <center><p>This is a discord bot written by me with various commands. 
+            Some of the most commonly used commands are for league of legends and quality of life for server management.</p></center>
+            <center><p>Check out more at my <a href="https://github.com/FlyingViet/DiscordBot" target="_blank" >Github</a> for a list of the commands</p> </center>
             <center>
-              <button><a href="https://discordapp.com/oauth2/authorize?client_id=599401316107943946&permissions=2146958839&scope=bot" >Add to server</a></button>
+              <button><a href="https://discordapp.com/oauth2/authorize?client_id=599401316107943946&permissions=2146958839&scope=bot" target="_blank" >Add to server</a></button>
             </center>
           </p>
           {close}
