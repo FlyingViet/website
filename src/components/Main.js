@@ -34,8 +34,7 @@ class Main extends React.Component {
           </center>        
           <p>
             I am a Computer Science major at University of Wisconsin - Milwaukee. <br/>
-            I will be an incoming Software Development Engineer Intern at Amazon for Summer 2020. <br/>
-            Currently working at Quad doing full stack development.<br/>
+            I am a Software Development Engineer Intern at Amazon for Summer 2020. <br/>
             I am a quick learner with a passion for programming.<br/>
             Loves to travel, eat, take pictures, and hang out with friends and family.<br/>
             If you want to connect, feel free to add me on <a href="https://www.linkedin.com/in/brianthoang/" target="_blank">LinkedIn</a>
