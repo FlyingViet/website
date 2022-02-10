@@ -16,7 +16,7 @@
     "gatsby-source-instagram": "^0.5.1",
     "gatsby-source-instagram-all": "^2.0.5",
     "gatsby-transformer-sharp": "^2.2.23",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "react-helmet": "^5.2.1"
